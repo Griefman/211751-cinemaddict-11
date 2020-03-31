@@ -1,7 +1,7 @@
 # Личный проект «Киноман» [![Build status][travis-image]][travis-url]
 
 * Студент: [Stanislav Parshin](https://up.htmlacademy.ru/ecmascript/11/user/211751).
-* Наставник: `Неизвестно`.
+* Наставник: [Stanislav Parshin](https://up.htmlacademy.ru/ecmascript/11/user/211751).
 
 ---
 
