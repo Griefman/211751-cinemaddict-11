@@ -16,7 +16,7 @@ const CARD_COUNT = 5;
 const render = (container, template, place) => {
   container.insertAdjacentHTML(place, template);
 };
-const body = document.querySelector(`body`)
+// const body = document.querySelector(`body`);
 const siteHeaderElement = document.querySelector(`.header`);
 
 render(siteHeaderElement, createUseRateTemplate(), `beforeend`);
@@ -27,7 +27,7 @@ render(siteMainElement, createSiteMenuTemplate(), `beforeend`);
 render(siteMainElement, createSortTemplate(), `beforeend`);
 render(siteMainElement, createFilmsBoardTemplate(), `beforeend`);
 
-const filmsBoard =  siteMainElement.querySelector(`.films`);
+const filmsBoard = siteMainElement.querySelector(`.films`);
 render(filmsBoard, createListFilmsTemplate(), `beforeend`);
 
 const filmsListContainer = filmsBoard.querySelector(`.films-list__container`);
@@ -35,8 +35,6 @@ for (let i = 0; i < CARD_COUNT; i++) {
   render(filmsListContainer, createFilmCardTemplate(), `beforeend`);
 }
 render(filmsListContainer, createShowMoreButtonTemplate(), `beforeend`);
-
-
 
 render(filmsBoard, createTopRatedTemplate(), `beforeend`);
 
@@ -53,6 +51,6 @@ for (let i = 0; i < 2; i++) {
   render(mostCommentedContainer, createMostCommentedCardTemplate(), `beforeend`);
 }
 
-const footerStatistic = document.querySelector(`.footer__statistics`)
+const footerStatistic = document.querySelector(`.footer__statistics`);
 render(footerStatistic, createAmountFilmsTemplate(), `beforeend`);
 // render(body, createFilmDetailsTemplate(), `beforeend`);
